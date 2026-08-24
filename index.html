@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vurtual Tutorship - modern tutoring and academic support in Witbank.">
+  <title>Vurtual Tutorship | Learn Smarter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="brand">
+        <div class="logo-wrap"><img id="siteLogo" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=120&q=80" alt="Vurtual Tutorship logo"></div>
+        <span>VURTUAL <b>TUTORSHIP</b></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#how">How It Works</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#admin" class="admin-link">Admin</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">WITBANK • PERSONALIZED LEARNING</span>
+          <h1>Learn smarter.<br><span>Achieve more.</span></h1>
+          <p>Professional tutoring support designed around the learner. Get focused academic help, flexible sessions and clear progress.</p>
+          <div class="hero-actions">
+            <a class="btn primary" id="heroWhatsapp" href="#">Book a tutoring session <span>↗</span></a>
+            <a class="btn secondary" href="#subjects">Explore subjects</a>
+          </div>
+          <div class="trust-row">
+            <span>✓ Personal attention</span>
+            <span>✓ Flexible sessions</span>
+            <span>✓ WhatsApp booking</span>
+          </div>
+        </div>
+        <div class="hero-card glass">
+          <div class="status"><span class="dot"></span> Accepting new learners</div>
+          <div class="profile-art">
+            <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=85" alt="Students learning together">
+          </div>
+          <div class="hero-card-bottom">
+            <div><small>Starting from</small><strong id="heroPrice">R150 / session</strong></div>
+            <span class="round-arrow">↗</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="subjects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="eyebrow">OUR SERVICES</span><h2>Support for every<br><span>learning journey.</span></h2></div>
+          <p>Choose a learning option and message us on WhatsApp to discuss availability, pricing and your learner's needs.</p>
+        </div>
+        <div class="cards" id="serviceGrid"></div>
+      </div>
+    </section>
+
+    <section id="how" class="section soft">
+      <div class="container">
+        <div class="center-head"><span class="eyebrow">SIMPLE PROCESS</span><h2>Start learning in <span>3 steps.</span></h2></div>
+        <div class="steps">
+          <div class="step"><b>01</b><div class="icon">💬</div><h3>Message us</h3><p>Tell us the subject, grade and support you need.</p></div>
+          <div class="step"><b>02</b><div class="icon">🗓️</div><h3>Choose a session</h3><p>We confirm availability and the best session option.</p></div>
+          <div class="step"><b>03</b><div class="icon">🎓</div><h3>Start learning</h3><p>Get focused tutoring with a plan built around your goals.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div class="about-image"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85" alt="Tutoring classroom"></div>
+        <div class="about-copy">
+          <span class="eyebrow">WHY VURTUAL TUTORSHIP</span>
+          <h2>A calmer, clearer way to <span>learn.</span></h2>
+          <p>We focus on understanding, confidence and measurable progress. Whether a learner needs help catching up, preparing for tests or strengthening a subject, we make learning feel more manageable.</p>
+          <div class="check-list"><span>✓ Learner-focused sessions</span><span>✓ Friendly academic guidance</span><span>✓ Flexible WhatsApp communication</span></div>
+          <a class="btn primary" id="aboutWhatsapp" href="#">Talk to us on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-band">
+      <div class="container contact-grid">
+        <div><span class="eyebrow">READY TO GET STARTED?</span><h2>Let's build a better<br><span>learning plan.</span></h2></div>
+        <div class="contact-box"><p><b>Witbank</b></p><p>076 753 1179</p><a class="btn white" id="contactWhatsapp" href="#">WhatsApp Vurtual Tutorship ↗</a></div>
+      </div>
+    </section>
+
+    <section id="admin" class="section admin-section">
+      <div class="container">
+        <div class="admin-header"><div><span class="eyebrow">STORE MANAGEMENT</span><h2>Admin dashboard</h2><p>Upload your logo/photos, change prices and manage services. Connect the supplied database to make changes permanent.</p></div></div>
+        <div id="adminLogin" class="admin-panel">
+          <h3>Admin login</h3>
+          <p>Enter your Supabase admin email to continue.</p>
+          <input id="adminEmail" type="email" placeholder="Admin email">
+          <button class="btn primary" id="loginBtn">Send login link</button>
+          <small id="loginMsg"></small>
+        </div>
+        <div id="adminDashboard" class="admin-panel hidden">
+          <div class="admin-toolbar">
+            <h3>Content & pricing</h3><button class="btn secondary" id="logoutBtn">Log out</button>
+          </div>
+          <label>Logo upload <input id="logoUpload" type="file" accept="image/*"></label>
+          <div id="serviceAdmin"></div>
+          <button class="btn primary" id="saveBtn">Save changes</button>
+          <small id="saveMsg"></small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><div><b>VURTUAL TUTORSHIP</b><p>Professional tutoring • Witbank</p></div><div>076 753 1179</div></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
