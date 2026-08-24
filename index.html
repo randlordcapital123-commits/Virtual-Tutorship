@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VURTUAL TUTORSHIP</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#"><img id="siteLogo" src="" alt="VURTUAL TUTORSHIP"></a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#admin" class="nav-admin"><i class="fas fa-cog"></i> Admin</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">✨ Premium Virtual Tutoring</div>
+            <h1 class="hero-title">Unlock Your <br><span>Academic Potential</span></h1>
+            <p class="hero-desc">Expert-led virtual tutorships tailored to your needs. Learn from the best, anywhere in South Africa. <strong>Witbank</strong> — we're here for you.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn-primary"><i class="fas fa-graduation-cap"></i> Explore Services</a>
+                <a href="https://wa.me/27767531179?text=Hello%20VURTUAL%20TUTORSHIP%2C%20I'm%20interested!" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item"><span class="stat-number">50+</span><span class="stat-label">Active Students</span></div>
+                <div class="stat-item"><span class="stat-number">12+</span><span class="stat-label">Expert Tutors</span></div>
+                <div class="stat-item"><span class="stat-number">98%</span><span class="stat-label">Satisfaction Rate</span></div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,40 C360,120 720,0 1080,40 C1260,60 1380,80 1440,40 L1440,120 L0,120 Z" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Services</span>
+                <h2>Choose Your <span>Learning Path</span></h2>
+                <p>Browse our curated tutoring packages and enroll with one click via WhatsApp.</p>
+            </div>
+            <div class="services-grid" id="productsGrid">
+                <!-- dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image"><div class="about-image-inner"><i class="fas fa-chalkboard-teacher"></i></div></div>
+                <div class="about-content">
+                    <span class="section-tag">About Us</span>
+                    <h2>Why <span>VURTUAL TUTORSHIP</span>?</h2>
+                    <p>Based in <strong>Witbank</strong>, we connect students with top-tier virtual tutors across all subjects. Our platform is designed to make learning accessible, engaging, and effective — from the comfort of your home.</p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check-circle"></i> Qualified & experienced tutors</li>
+                        <li><i class="fas fa-check-circle"></i> Flexible scheduling</li>
+                        <li><i class="fas fa-check-circle"></i> One-on-one & group sessions</li>
+                        <li><i class="fas fa-check-circle"></i> Affordable packages</li>
+                    </ul>
+                    <a href="https://wa.me/27767531179?text=Hello%20VURTUAL%20TUTORSHIP%2C%20I'd%20like%20to%20know%20more!" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat with Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2>Let's <span>Connect</span></h2>
+                <p>Reach out to us via WhatsApp or visit us in Witbank.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card"><div class="contact-icon"><i class="fab fa-whatsapp"></i></div><h4>WhatsApp</h4><p><a href="https://wa.me/27767531179" target="_blank">076 753 1179</a></p></div>
+                    <div class="contact-card"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><h4>Location</h4><p>Witbank, Mpumalanga<br>South Africa</p></div>
+                    <div class="contact-card"><div class="contact-icon"><i class="fas fa-envelope"></i></div><h4>Email</h4><p><a href="mailto:info@vurtualtutorship.co.za">info@vurtualtutorship.co.za</a></p></div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group"><input type="text" placeholder="Your Name" required></div>
+                        <div class="form-group"><input type="email" placeholder="Your Email" required></div>
+                        <div class="form-group"><textarea placeholder="Your Message" rows="4" required></textarea></div>
+                        <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ADMIN PANEL (hidden section) ============ -->
+    <section class="admin-panel" id="admin">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Administration</span>
+                <h2>Manage <span>Your Services</span></h2>
+                <p>Add, edit or delete products, change prices and upload the logo.</p>
+            </div>
+
+            <!-- Logo upload -->
+            <div class="admin-logo-section">
+                <h3><i class="fas fa-image"></i> Site Logo</h3>
+                <div class="logo-upload-area">
+                    <img id="adminLogoPreview" src="" alt="Current Logo" style="max-height:80px;">
+                    <input type="file" id="logoInput" accept="image/*">
+                    <button id="uploadLogoBtn" class="btn-primary"><i class="fas fa-upload"></i> Upload Logo</button>
+                </div>
+                <div id="logoStatus"></div>
+            </div>
+
+            <!-- Product form -->
+            <div class="admin-product-form" id="productFormContainer">
+                <h3 id="formTitle">Add New Service</h3>
+                <form id="productForm">
+                    <input type="hidden" id="editId" value="">
+                    <div class="form-group">
+                        <label>Service Name</label>
+                        <input type="text" id="prodName" placeholder="e.g. Mathematics Tutoring" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Price (ZAR)</label>
+                        <input type="number" id="prodPrice" placeholder="e.g. 250" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea id="prodDesc" placeholder="Brief description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Product Image (drag & drop or click to upload)</label>
+                        <div id="dropArea" class="drop-zone">
+                            <p><i class="fas fa-cloud-upload-alt"></i> Drag & drop image here, or click to browse</p>
+                            <input type="file" id="prodImage" accept="image/*" style="display:none;">
+                        </div>
+                        <div id="imagePreview"></div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary"><i class="fas fa-save"></i> Save Service</button>
+                        <button type="button" id="cancelForm" class="btn-secondary">Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Product list -->
+            <div class="admin-product-list">
+                <h3>Current Services</h3>
+                <button id="showAddForm" class="btn-primary" style="margin-bottom:16px;"><i class="fas fa-plus"></i> Add New</button>
+                <div id="productList">
+                    <!-- loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img id="footerLogo" src="" alt="VURTUAL TUTORSHIP">
+                    <p>Empowering students through virtual excellence. Based in Witbank, serving South Africa.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/27767531179" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
+                <div class="footer-links"><h4>Support</h4><ul><li><a href="https://wa.me/27767531179" target="_blank">WhatsApp Support</a></li><li><a href="mailto:info@vurtualtutorship.co.za">Email Us</a></li><li><a href="#">FAQ</a></li></ul></div>
+                <div class="footer-newsletter"><h4>Stay Updated</h4><p>Get the latest updates on new courses and offers.</p><form><input type="email" placeholder="Your email"><button type="submit"><i class="fas fa-arrow-right"></i></button></form></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 <strong>VURTUAL TUTORSHIP</strong>. All rights reserved. | Witbank, South Africa</p><p><i class="fas fa-phone"></i> 076 753 1179</p></div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
